@@ -71,3 +71,12 @@ function combineAllArrays(...args){
     
    }
    console.log(combineAllArrays([3,6,7.8],[2,7,3,1]));
+//11
+function sumAndSquare(...args){
+    for (let i = 0; i < args.length; i++) {
+        args[i] = args[i]**2
+        
+    }
+    return args.reduce((acumulado, num) => acumulado+ num,0)
+}
+console.log(sumAndSquare)
